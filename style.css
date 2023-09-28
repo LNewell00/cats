@@ -6,78 +6,81 @@
     flex-direction: column;
 }
 
-
 .pictureContainer {
     display: flex;
     flex-wrap: wrap;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     border-radius: 30px;
-    background-color: gainsboro;
+    background-color: darkslateblue;
 
 }
-
 .headerContainer {
     display: flex;
     justify-content: end;
 }
-
 .catText {
     font-weight: 700;
     padding: 20px;
+    color: #fff;
 }
-
+a {
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
 img {
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
 
+/* Background Video Please don't mess with this */
+.back-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+/* End of Background video */
 
+/* This is for the front page, where it says cats. */
+.frontPage {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
-
-
-
-
-
-
-
-
-
-/* Dropdown Button */
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-
-  /* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position:relative;
-    display: inline;
- 
-  }
-
-  /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}  
-    /* Links inside the dropdown */
-.dropdown-content a {
+.frontPage h1{
+    font-size: 160px;
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+    font-weight: 600;
+    transition: 0.5s;
+    margin: 20px;
+}
+h4 {
+    margin-bottom: 100px;
+    padding: 10px;
+    outline-color: black;
+    outline-style: auto;
+    outline-width: 2px;
+}
 
-  /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.frontPage h1:hover{
+    -webkit-text-stroke: 3px black;  
+    color: transparent;
+}
+/* End of the front page. */
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+* {
+    font-family: courier, georgia;
+}
