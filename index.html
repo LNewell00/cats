@@ -5,7 +5,20 @@
     <link href="style.css" rel="stylesheet">
     <title>HTML Website</title>
 </head>
+
+
+
 <body>
+    <div class="header">
+        <un class="list">
+            <li><a href="#" >Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+        </un>
+    </div>
+
+
+
     <div class="frontPage">
         <h1> Cats </h1>
         <h4> Created by Logan Newell</h4>
@@ -13,13 +26,11 @@
 
 
     <div>
-        <!-- Video -->
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="pics/Topo.mp4">
-        </video>
+        <!-- Video html code -->
+<video autoplay loop muted plays-inline class="back-video"><source src="pics/Topo.mp4"></video>
 
-<!-- Star of Pictures -->
-        <nav class="pictureContainer">
+        <!-- Star of Pictures -->
+        <nav class="pictureContainer" id="container">
             <div class="container">
                 <img src="pics/buff_cat.jpeg" ></img>
                 <p class="catText">Download this Image <a href="pics/buff_cat.jpeg" download>HERE</a>.</p>
@@ -28,9 +39,15 @@
             <div class="container">
                 <img src="pics/thor_cat.png" ></img>
                 <p class="catText">Download this Image <a href="pics/thor_cat.png" download>HERE</a>.</p>
-                <!-- Downloads a buff cat -->
+                <!-- Downloads thor cat -->
             </div>
         </nav>
+    </div>
+    <!-- Quotes for cat -->
+    <div class="quoteContainer" id="container">
+        <p id="quote">
+            "Cats are Majestic Creatures." - GOD
+        </p>
     </div>
 </body>
 </html>
